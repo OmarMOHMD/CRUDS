@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="shortcut icon" href="../fav-icons/price-icon.png" type="image/x-icon">
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="crud">
+
+        <div class="head">
+            <!-- <h2>cruds</h2> -->
+            <p>(PMS) Product Management System<img src="../Images/price-taag.png" alt="money icon"></p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="title" id="title" placeholder="Product title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" name="price" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" name="taxes" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" name="ads" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" name="discount" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+                <input type="number" name="count" id="count" placeholder="count">
+                <input type="text" name="category" id="category" placeholder="category">
+                <button id="submit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search">
+                <div class="btnSearch">
+                    <button id="searchTitle">Search By Title</button>
+                    <button id="searchCategory">Search By Category</button>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th class="category_hide">category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>3000</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>300</td>
+                    <td>2430</td>
+                    <td class="category_hide">phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>3000</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>300</td>
+                    <td>2430</td>
+                    <td class="category_hide">phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>3000</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>300</td>
+                    <td>2430</td>
+                    <td class="category_hide">phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>3000</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>300</td>
+                    <td>2430</td>
+                    <td class="category_hide">phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="../Scripts/main.js"></script>
+</body>
+</html>

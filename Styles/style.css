@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start the head */
+
+body {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.crud {
+    max-width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+/* start inputs section */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 3px 0;
+    border-radius: 3px;
+    padding: 10px;
+    color: #fff;
+}
+
+input:focus {
+    background: #000;
+}
+
+.price input {
+    width: 20%;
+}
+
+img {
+    color: red;
+    font-size: 0.7em;
+    margin: 5px;
+    width: 30px;
+}
+
+#total {
+    display: block;
+    width: auto;
+    background: red;
+    padding: 6px 4px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#total::before {
+    content: "TOTAL: ";
+}
+
+/* btn section */
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    color: white;
+    cursor: pointer;
+    background: #000000;
+    transition: background 0.5s, color 0.5s;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background: rgb(20, 20, 20);
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+button:focus {
+    background: rgb(255, 3, 3);
+    color: rgb(255, 255, 255);
+}
+
+/* outputs */
+
+form {
+    border: none;
+    padding: 0;
+}
+
+.search input {
+    width: 100%;
+    border: 1px solid rgb(213, 196, 196);
+    display: block;
+    padding: 10px 4px 13px 40px;
+    background: url(../Images/search.png) no-repeat 4px center;
+    /* background-repeat: no-repeat; */
+}
+
+.btnSearch {
+    display: flex;
+    gap: 6px;
+}
+
+.btnSearch button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table button:hover {
+    letter-spacing: 0ch;
+}
+
+/* RWD make it responsive */
+
+@media (max-width:818px) {
+    
+    table {
+        text-align: center;
+        font-size: .9em;
+        font-weight: 100;
+    }
+}
+
+@media (max-width:350px) {
+    table {
+        gap: 2px;
+        font-weight: 100;
+        font-size: .7em;
+        margin-left: 0;
+    }
+
+    th {
+        padding: 2px;
+        font-size: .6em;
+    }
+
+    button {
+        border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background: #000000;
+    transition: background 0.5s, color 0.5s;
+    margin-bottom: 1px;
+    font-size: .7em;
+    }
+    
+    .btnSearch {
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+    margin-bottom: 1px;
+    font-weight: 100;
+    font-size: .7em;
+}
+
+tbody button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background: #000000;
+    transition: background 0.5s, color 0.5s;
+    margin-bottom: 1px;
+    font-size: .7em;
+}
+
+.category_hide {
+    display: none;
+}
+
+}
