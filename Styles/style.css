@@ -147,7 +147,7 @@ table button:hover {
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:450px) {
     table {
         gap: 2px;
         font-weight: 100;
