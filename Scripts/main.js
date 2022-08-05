@@ -22,7 +22,7 @@ function getTotal() {
     }
     else {
         total.innerHTML = '';
-        total.style.background = 'rgb(0,0,50)';
+        total.style.background = '#2E1B7B';
     }
 }
 
@@ -50,7 +50,8 @@ submit.onclick = function() {
     }
 
 //Count
-    if(mood === 'create'){    
+    if(title.value != '' && price.value != '' && newPro.count < 200){
+            if(mood === 'create'){    
         if(newPro.count > 1) {
         for(let i = 0; i < newPro.count; i++) {
             dataPro.push(newPro);
@@ -61,20 +62,26 @@ submit.onclick = function() {
         submit.innerHTML = 'create';
         count.style.display = 'block';
     }
-
-} else {
+                clearData()
+} 
+    }
+else {
     dataPro[tmp] = newPro;
 }   
 
     //Save localStorage
 
     localStorage.setItem('product', JSON.stringify(dataPro));
-    clearData()
     showData()
+
+// Add sound when clicking a btn “how to add sound onclick in html” Code Answer
+
     // var audio = new Audio("../Finger Snap2.wav");
     // submit.onclick = function () {
-    //     audio.play();
+    //     audio.play()
     // }
+    // audio.play()
+    
 }
 
 //Clear inputs when user finish create
@@ -98,7 +105,7 @@ function showData() {
     for(let i = 0; i < dataPro.length; i++){
         table += `
                 <tr>
-                    <td>${i}</td>
+                    <td>${i+1}</td>
                     <td>${dataPro[i].title}</td>
                     <td>${dataPro[i].price}</td>
                     <td>${dataPro[i].taxes}</td>
@@ -228,4 +235,3 @@ function searchData(value) {
 
 
 
-// Add sound when clicking a btn “how to add sound onclick in html” Code Answer

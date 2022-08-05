@@ -61,9 +61,10 @@ img {
     display: block;
     width: auto;
     background: rgb(46, 27, 123);
-    padding: 6px 4px;
+    padding: 7px 4px;
     border-radius: 5px;
     font-size: .8em;
+    margin: 2px 0;
 }
 
 #total::before {
@@ -90,7 +91,7 @@ button:hover {
 }
 
 button:focus {
-    background: rgb(255, 3, 3);
+    background: rgb(3, 29, 78);
     color: rgb(255, 255, 255);
 }
 
