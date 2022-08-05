@@ -27,17 +27,20 @@
             </div>
                 <input type="number" name="count" id="count" placeholder="count">
                 <input type="text" name="category" id="category" placeholder="category">
-                <button id="submit">Create</button>
+                <button id="submit" onclick="Audio.play();" >Create</button>
         </div>
 
         <div class="outputs">
             <div class="search">
-                <input type="text" name="search" id="search" placeholder="search">
+                <input  onkeyup="searchData(this.value)" type="text" name="search" id="search" placeholder="search">
                 <div class="btnSearch">
-                    <button id="searchTitle">Search By Title</button>
-                    <button id="searchCategory">Search By Category</button>
+                    <button onclick="getSearch(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearch(this.id)" id="searchCategory">Search By Category</button>
                 </div>
             </div>
+        </div>
+
+        <div id="deleteAll">
         </div>
 
         <table>
@@ -54,58 +57,9 @@
                 <th>delete</th>
             </tr>
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>samsung</td>
-                    <td>3000</td>
-                    <td>100</td>
-                    <td>70</td>
-                    <td>300</td>
-                    <td>2430</td>
-                    <td class="category_hide">phone</td>
-                    <td><button id="update">update</button></td>
-                    <td><button id="delete">delete</button></td>
-                </tr>
+            <tbody id="tbody">
 
-                <tr>
-                    <td>1</td>
-                    <td>samsung</td>
-                    <td>3000</td>
-                    <td>100</td>
-                    <td>70</td>
-                    <td>300</td>
-                    <td>2430</td>
-                    <td class="category_hide">phone</td>
-                    <td><button id="update">update</button></td>
-                    <td><button id="delete">delete</button></td>
-                </tr>
 
-                <tr>
-                    <td>1</td>
-                    <td>samsung</td>
-                    <td>3000</td>
-                    <td>100</td>
-                    <td>70</td>
-                    <td>300</td>
-                    <td>2430</td>
-                    <td class="category_hide">phone</td>
-                    <td><button id="update">update</button></td>
-                    <td><button id="delete">delete</button></td>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td>samsung</td>
-                    <td>3000</td>
-                    <td>100</td>
-                    <td>70</td>
-                    <td>300</td>
-                    <td>2430</td>
-                    <td class="category_hide">phone</td>
-                    <td><button id="update">update</button></td>
-                    <td><button id="delete">delete</button></td>
-                </tr>
             </tbody>
         </table>
 

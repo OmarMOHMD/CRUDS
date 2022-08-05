@@ -20,6 +20,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0;
+    user-select: none;
 }
 
 /* start inputs section */
@@ -59,10 +60,10 @@ img {
 #total {
     display: block;
     width: auto;
-    background: red;
+    background: rgb(46, 27, 123);
     padding: 6px 4px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: .8em;
 }
 
 #total::before {
@@ -239,8 +240,33 @@ tbody button {
     display: none;
 }
 
+#deleteAll button {
+    margin: 6px 0 !important;
+    font-size: .7em !important;
+    width: 20vw !important;
+    height: 6vh !important;
 }
 
-@media (max-width:400px) {
-    
+}
+
+#deleteAll button {
+    margin: 10px 0;
+    padding: 1px;
+    text-align: center;
+    align-items: center;
+    font-size: .9em;
+    width: 15vw;
+    height: 10vh !important;
+    border-radius: 40px;
+    color: white;
+    background-color: rgba(239, 20, 20, 0.819);
+    display: flex;
+}
+
+#deleteAll button:hover {
+    letter-spacing: normal;
+}
+
+#deleteAll button:focus {
+    border: 1px solid #000;
 }
