@@ -87,7 +87,6 @@ button {
 button:hover {
     background: rgb(20, 20, 20);
     color: #ffffff;
-    letter-spacing: 1px;
 }
 
 button:focus {
@@ -243,8 +242,8 @@ tbody button {
 #deleteAll button {
     margin: 6px 0 !important;
     font-size: .7em !important;
-    width: 20vw !important;
-    height: 6vh !important;
+    width: 25vw !important;
+    height: 9vh !important;
 }
 
 }
@@ -256,7 +255,6 @@ tbody button {
     align-items: center;
     font-size: .9em;
     width: 15vw;
-    height: 10vh !important;
     border-radius: 40px;
     color: white;
     background-color: rgba(239, 20, 20, 0.819);
@@ -269,4 +267,14 @@ tbody button {
 
 #deleteAll button:focus {
     border: 1px solid #000;
+}
+
+#submit {
+    margin: 6px 0;
+}
+
+#searchTitle ,#searchCategory {
+    font-size: .8em;
+    padding: 10px;
+    width: 19vw;
 }
