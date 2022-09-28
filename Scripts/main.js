@@ -123,7 +123,7 @@ function showData() {
     let btnDelete = document.getElementById('deleteAll');
     if(dataPro.length > 0){
         btnDelete.innerHTML = `
-        <button onclick="deleteAll()"><img src="./images/garbage.png" alt="image garbage delete all items">
+        <button onclick="deleteAll()"><img src="../Images/garbage.png" alt="image garbage delete all items">
         Delete All (${dataPro.length})</button>
         `
     }else {
